@@ -15,11 +15,12 @@ const images = [
 
 const galleryList = document.querySelector(".gallery")
 
-const markup = images.map(image => `<li><img src=${image.url} alt=${image.alt} width=300/></li>`).join("")
+const markup = images.map(image => `<li><img src="${image.url}" alt="${image.alt}" width="300"/></li>`).join("")
 
 galleryList.insertAdjacentHTML("beforeend", markup)
 
-galleryList.style.display = "flex"
+
+
 
 
     

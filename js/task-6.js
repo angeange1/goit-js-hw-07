@@ -13,7 +13,7 @@ function getRandomHexColor() {
 }
 
 function createBoxes(amount) {
-  parentBox.innerHTML = ""
+  handleDestroy()
   const array = []
   let boxSize = 30
   for (let i = 1; i <= amount; i += 1) {
@@ -30,7 +30,7 @@ function createBoxes(amount) {
 
 function handleCreate(event) {
     if ((input.value >= 1) && (input.value <= 100)) {
-    createBoxes(input.value)
+    createBoxes(Number(input.value))
     input.value = ""
   }
 }
